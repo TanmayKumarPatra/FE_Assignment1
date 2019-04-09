@@ -1,14 +1,45 @@
 <!doctype>
 <html>
 	<head>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+			<script src="script.js"></script>
 	</head>
 	<body>
 
-		<video width="320" height="240" controls>
+		<video width="320" height="240" id="video" >
   			<source src="movie.mp4" type="video/mp4">
   			<source src="movie.ogg" type="video/ogg">
   			Your browser does not support the video tag.
 		</video>
+		<div>
+		<button id="play" class="btn btn-default"  onclick="playPause()">
+		<span class="glyphicon glyphicon-play"></span><!--&gt;-->
+		</button>
+		<button id="pause" class="btn btn-default" onclick="pauseVideo()">
+		<span class="glyphicon glyphicon-pause"></span><!--&gt;-->
+		</button>
+		<button id="volumehigh" class="btn btn-default" onclick="volumeIncrease()">
+		<span class="glyphicon glyphicon-plus-sign"></span><!--&gt;-->
+		</button>
+		<button id="volumehigh" class="btn btn-default" onclick="volumeDecrease()">
+		<span class="glyphicon glyphicon-minus-sign"></span><!--&gt;-->
+		</button>
+		<button id="reloadPage" class="btn btn-default" onclick="reloadVideo()">
+		<span class="glyphicon glyphicon-stop"></span><!--&gt;-->
+		</button>
+		<button id="muteVideo" class="btn btn-default" onclick="mutedVideo()">
+		<span class="glyphicon glyphicon-headphones"></span><!--&gt;-->
+		</button>
+		<span class="glyphicon glyphicon-thumbs-up"></span> 
+		<span class="glyphicon glyphicon-thumbs-down"></span> 
+
+
+
+		</div>
+		   
+
 
 		<p><strong>Note:</strong> The video tag is not supported in Internet Explorer 8 and earlier versions.</p>
 
