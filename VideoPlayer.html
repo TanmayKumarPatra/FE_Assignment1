@@ -1,14 +1,14 @@
 <!doctype>
 <html>
 	<head>
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-			<script src="script.js"></script>
+		<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
 	</head>
 	<body>
 
-		<video width="320" height="240" id="video" >
+		<video width="385" height="300" id="video" >
   			<source src="movie.mp4" type="video/mp4">
   			<source src="movie.ogg" type="video/ogg">
   			Your browser does not support the video tag.
@@ -32,16 +32,13 @@
 		<button id="muteVideo" class="btn btn-default" onclick="mutedVideo()">
 		<span class="glyphicon glyphicon-headphones"></span><!--&gt;-->
 		</button>
-		<span class="glyphicon glyphicon-thumbs-up"></span> 
-		<span class="glyphicon glyphicon-thumbs-down"></span> 
-
-
-
+		<button id="likeVideo" class="btn btn-default" onclick="likeVideo()">
+		<span class="glyphicon glyphicon-thumbs-up"></span><!--&gt;-->
+		<label id="likebutton"></label>
+		</button>
+		<button id="unlikeVideo" class="btn btn-default" onclick="unlikeVideo()">
+		<span class="glyphicon glyphicon-thumbs-down"></span><!--&gt;-->
+		<label id="unlikebutton"></label>
+		</button>
 		</div>
-		   
-
-
-		<p><strong>Note:</strong> The video tag is not supported in Internet Explorer 8 and earlier versions.</p>
-
-	</body>
-</html>
+	
