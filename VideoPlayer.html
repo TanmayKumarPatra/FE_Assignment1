@@ -1,44 +1,78 @@
 <!doctype>
 <html>
-	<head>
-		<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-		<script src="script.js"></script>
-	</head>
-	<body>
-
-		<video width="385" height="300" id="video" >
-  			<source src="movie.mp4" type="video/mp4">
-  			<source src="movie.ogg" type="video/ogg">
-  			Your browser does not support the video tag.
-		</video>
+<head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<script src="playlist.js"></script>
+<link rel="stylesheet" href="playlist.css">
+</head>
+<body>
+	<header>
+		<h1>Responsive video player</h1>
+	</header>
+	<section>
 		<div>
-		<button id="play" class="btn btn-default"  onclick="playPause()">
-		<span class="glyphicon glyphicon-play"></span><!--&gt;-->
-		</button>
-		<button id="pause" class="btn btn-default" onclick="pauseVideo()">
-		<span class="glyphicon glyphicon-pause"></span><!--&gt;-->
-		</button>
-		<button id="volumehigh" class="btn btn-default" onclick="volumeIncrease()">
-		<span class="glyphicon glyphicon-plus-sign"></span><!--&gt;-->
-		</button>
-		<button id="volumehigh" class="btn btn-default" onclick="volumeDecrease()">
-		<span class="glyphicon glyphicon-minus-sign"></span><!--&gt;-->
-		</button>
-		<button id="reloadPage" class="btn btn-default" onclick="reloadVideo()">
-		<span class="glyphicon glyphicon-stop"></span><!--&gt;-->
-		</button>
-		<button id="muteVideo" class="btn btn-default" onclick="mutedVideo()">
-		<span class="glyphicon glyphicon-headphones"></span><!--&gt;-->
-		</button>
-		<button id="likeVideo" class="btn btn-default" onclick="likeVideo()">
-		<span class="glyphicon glyphicon-thumbs-up"></span><!--&gt;-->
-		<label id="likebutton"></label>
-		</button>
-		<button id="unlikeVideo" class="btn btn-default" onclick="unlikeVideo()">
-		<span class="glyphicon glyphicon-thumbs-down"></span><!--&gt;-->
-		<label id="unlikebutton"></label>
-		</button>
+			<figure id="video_player">
+				<video id="videoPlayer" preload="none" poster="image1.PNG" controls>
+					<source src="movie.mp4" type="video/mp4">
+					<source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video>
+				<div>
+					<button id="play" class="btn btn-default" onclick="playPause()">
+						<span class="glyphicon glyphicon-play"></span>
+						<!--&gt;-->
+					</button>
+					<button id="pause" class="btn btn-default" onclick="pauseVideo()">
+						<span class="glyphicon glyphicon-pause"></span>
+						<!--&gt;-->
+					</button>
+					<button id="volumehigh" class="btn btn-default"
+						onclick="volumeIncrease()">
+						<span class="glyphicon glyphicon-plus-sign"></span>
+						<!--&gt;-->
+					</button>
+					<button id="volumehigh" class="btn btn-default"
+						onclick="volumeDecrease()">
+						<span class="glyphicon glyphicon-minus-sign"></span>
+						<!--&gt;-->
+					</button>
+					<button id="reloadPage" class="btn btn-default"
+						onclick="reloadVideo()">
+						<span class="glyphicon glyphicon-stop"></span>
+						<!--&gt;-->
+					</button>
+					<button id="muteVideo" class="btn btn-default"
+						onclick="mutedVideo()">
+						<span class="glyphicon glyphicon-headphones"></span>
+						<!--&gt;-->
+					</button>
+					<button id="likeVideo" class="btn btn-default"
+						onclick="likeVideo()">
+						<span class="glyphicon glyphicon-thumbs-up"></span>
+						<!--&gt;-->
+						<label id="likebutton"></label>
+					</button>
+					<button id="unlikeVideo" class="btn btn-default"
+						onclick="unlikeVideo()">
+						<span class="glyphicon glyphicon-thumbs-down"></span>
+						<!--&gt;-->
+						<label id="unlikebutton"></label>
+					</button>
+				</div>
+				<figcaption>
+					<a href="movie.mp4"><img alt="1" src="image1.PNG"></a>
+					<a href="movie.mp4"><img alt="2" src="image1.PNG"></a>
+					<a href="movie.mp4"><img alt="3" src="image1.PNG"></a>
+				</figcaption>
+			</figure>
 		</div>
-	
+	</section>
+
+</body>
+</html>
