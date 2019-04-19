@@ -83,31 +83,7 @@ function unlikeVideo(){
 
 }
 
- 
-/*   var videoplayer = document.getElementById("video_player");
-links = videoplayer.getElementsByTagName('a');
-for(var i=0; i<links.length;i++){
-  links[i].onclick = handler;
-} */
-/* function handler(e){
-  e.preventDefault();
-  videotarget = this.getAttribute("href");
-  filename= videotarget.substr(0, videotarget.lastIndexOf('.'))||videotarget;
-  video = document.querySelector("#video_player video ");
-  video.removeAttribute('poster');
-  source= document.querySelectorAll("video_player video source");
-  source[0].src= filename + ".mp4";
-  source[1].src=filename + ".webm";
-  video.load();
-  video.playPause();
-  video.pauseVideo(); 
- }  */
- function myFunction() {
-   console.log('hii')
-  document.getElementById('source_video').src = 'movie.mp4';
+ function myFunction(e) {
+  document.getElementById('source_video').src = 'e';
   document.getElementById('video').style.width = '100%';   
 } 
-/* document.getElementById('figcaptionplaylist').addEventListener('click', function() {
-  document.getElementById('source_video').src = 'movie.mp4';
-  document.getElementById('video').style.width = '400px'; 
-}); */
