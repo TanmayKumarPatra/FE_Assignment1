@@ -1,0 +1,80 @@
+<!doctype>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<script src="playlist.js"></script>
+<link rel="stylesheet" href="playlist.css">
+</head>
+<body>
+	<header>
+		<h1>Responsive video player</h1>
+	</header>
+	<!-- <section>
+		<div> -->
+			<figure id="video_player">
+				<video id="video"  width="700px" >
+					<source id="source_video" src="movie.mp4" type="video/mp4">
+					<source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video>
+			<div>
+					<button id="play" class="btn btn-default" onclick="playPause()">
+						<span class="glyphicon glyphicon-play"></span>
+						
+					</button>
+					<button id="pause" class="btn btn-default" onclick="pauseVideo()">
+						<span class="glyphicon glyphicon-pause"></span>
+					
+					</button>
+					<button id="volumehigh" class="btn btn-default"
+						onclick="volumeIncrease()">
+						<span class="glyphicon glyphicon-plus-sign"></span>
+					
+					</button>
+					<button id="volumehigh" class="btn btn-default"
+						onclick="volumeDecrease()">
+						<span class="glyphicon glyphicon-minus-sign"></span>
+					
+					</button>
+					<button id="reloadPage" class="btn btn-default"
+						onclick="reloadVideo()">
+						<span class="glyphicon glyphicon-stop"></span>
+					
+					</button>
+					<button id="muteVideo" class="btn btn-default"
+						onclick="mutedVideo()">
+						<span class="glyphicon glyphicon-headphones"></span>
+						
+					</button>
+					<button id="likeVideo" class="btn btn-default"
+						onclick="likeVideo()">
+						<span class="glyphicon glyphicon-thumbs-up"></span>
+					
+						<label id="likebutton"></label>
+					</button>
+					<button id="unlikeVideo" class="btn btn-default"
+						onclick="unlikeVideo()">
+						<span class="glyphicon glyphicon-thumbs-down"></span>
+					
+						<label id="unlikebutton"></label>
+					</button>
+				</div> 
+				<figcaption>
+					<ul>
+						<li><a href="javascript:void(0)" onclick="myFunction('movie.mp4')"><img alt="1" src="image1.PNG"></a></li>
+						<li><a href="javascript:void(0)" onclick="myFunction('movie.mp4')"><img alt="1" src="image1.PNG"></a></li>
+						<li><a href="javascript:void(0)" onclick="myFunction('movie.mp4')"><img alt="1" src="image1.PNG"></a></li>
+					</ul>
+				</figcaption> 
+			</figure>
+	<!-- 	</div>
+	</section> -->
+
+</body>
+</html>
